@@ -1,0 +1,2 @@
+- Respóndeme siempre en español; código y commits en inglés.
+- Resúmenes cortos: qué cambiaste, qué comando verificaste, qué falta.
