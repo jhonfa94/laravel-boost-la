@@ -27,3 +27,4 @@ Homestead.yaml
 Thumbs.db
 coverage.xml
 CLAUDE.local.md
+.claude/settings.local.json

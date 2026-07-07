@@ -1,0 +1,30 @@
+{
+    "permissions": {
+        "deny": [
+            "Read(.env)",
+            "Read(.env.production)",
+            "Bash(git push *)",
+            "Bash(./vendor/bin/sail artisan migrate:fresh*)",
+            "Bash(./vendor/bin/sail artisan migrate:reset*)",
+            "Bash(./vendor/bin/sail artisan db:wipe*)"
+        ],
+        "ask": [
+            "Bash(./vendor/bin/sail composer require *)",
+            "Bash(./vendor/bin/sail composer remove *)",
+            "Bash(./vendor/bin/sail artisan migrate *)"
+        ],
+        "allow": [
+            "Bash(./vendor/bin/sail composer qa)",
+            "Bash(./vendor/bin/sail composer test*)",
+            "Bash(./vendor/bin/sail composer pint*)",
+            "Bash(./vendor/bin/sail composer phpstan)",
+            "Bash(./vendor/bin/sail composer rector*)",
+            "Bash(./vendor/bin/sail bin pest *)",
+            "Bash(./vendor/bin/sail bin pint *)",
+            "Bash(./vendor/bin/sail artisan route:list *)",
+            "Bash(./vendor/bin/sail artisan make:*)",
+            "Bash(git add *)",
+            "Bash(git commit *)"
+        ]
+    }
+}
